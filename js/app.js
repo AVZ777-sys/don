@@ -385,11 +385,8 @@ ${cData.basePrompt}`);
 
     document.getElementById("reliability-bar").style.width = `${score}%`;
     document.getElementById("reliability-value").textContent = `${score}%`;
-    document.getElementById("sandbox-prompt-box").textContent = promptParts.join("
-
-");
-    document.getElementById("sandbox-output-box").textContent = outputParts.join("
-");
+    document.getElementById("sandbox-prompt-box").textContent = promptParts.join("\n\n");
+    document.getElementById("sandbox-output-box").textContent = outputParts.join("\n");
   }
 
   function renderQuiz() {
