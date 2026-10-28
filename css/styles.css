@@ -1,0 +1,52 @@
+/* Custom Engineering Grid & Print Styles */
+:root {
+  --bg-slate: #0b1120;
+  --card-slate: #111827;
+  --border-slate: #1e293b;
+  --accent-blue: #38bdf8;
+  --accent-amber: #f59e0b;
+  --accent-emerald: #10b981;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans Armenian', sans-serif;
+  background-color: var(--bg-slate);
+  color: #f1f5f9;
+  scroll-behavior: smooth;
+}
+
+.bg-blueprint {
+  background-image: 
+    linear-gradient(to right, rgba(56, 189, 248, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+code, pre, .font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+.card-hover {
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.5);
+}
